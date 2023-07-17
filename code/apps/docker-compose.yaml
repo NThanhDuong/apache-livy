@@ -42,7 +42,6 @@ services:
         target: /opt/bitnami/spark/conf/log4j.properties
       - ./spark/spark-defaults.conf:/opt/bitnami/spark/conf/spark-defaults.conf
       - ./spark/jars_dir:/opt/bitnami/spark/ivy:z
-      - ./spark/jars_dir:/opt/bitnami/livy/postgresql-42.3.7.jar
     ports:
       - '8080:8080'
       - '7077:7077'
@@ -67,7 +66,6 @@ services:
         target: /opt/bitnami/spark/conf/log4j.properties
       - ./spark/spark-defaults.conf:/opt/bitnami/spark/conf/spark-defaults.conf
       - ./spark/jars_dir:/opt/bitnami/spark/ivy:z
-      - ./spark/jars_dir:/opt/bitnami/livy/postgresql-42.3.7.jar
     ports:
       - '8081:8081'   
     networks:
@@ -93,7 +91,6 @@ services:
         target: /opt/bitnami/spark/conf/log4j.properties
       - ./spark/spark-defaults.conf:/opt/bitnami/spark/conf/spark-defaults.conf
       - ./spark/jars_dir:/opt/bitnami/spark/ivy:z
-      - ./spark/jars_dir:/opt/bitnami/livy/postgresql-42.3.7.jar
     ports:
       - '8082:8082'   
     networks:
